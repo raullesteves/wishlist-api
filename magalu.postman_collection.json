@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "2a8e3e27-2227-4b44-bb4a-3e4aa1e34d96",
+		"name": "magalu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"magalu@sucesso.com\",\n\t\"password\": \"vamosla\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"clientEmail\": \"testinho@teste.com\",\n\t\"clientName\": \"mr test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get client",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client?clientEmail=testinho@teste.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "testinho@teste.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete client",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client?clientEmail=testinho@teste.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "testinho@teste.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"clientNewName\": \"testilson\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/client?clientEmail=testinho@teste.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "testinho@teste.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add wish",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productId\": \"eaefc867-10a6-3a5e-947d-43a984964fcf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/wishlist?clientEmail=raul@testee.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wishlist"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "raul@testee.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get wishlist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/wishlist?clientEmail=raul@testee.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wishlist"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "raul@testee.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete wish",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hZ2FsdUBzdWNlc3NvLmNvbSIsImlhdCI6MTU4MTk5NDgwOCwiZXhwIjoxNTgyMDAyMDA4fQ.PG-8r4RKD-T3_oWKhNfBsoVwMZLy70Oj4qzxkuSDl48",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"productId\": \"eaefc867-10a6-3a5e-947d-43a984964fcf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/wishlist?clientEmail=raul@testee.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"wishlist"
+					],
+					"query": [
+						{
+							"key": "clientEmail",
+							"value": "raul@testee.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

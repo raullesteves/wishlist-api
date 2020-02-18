@@ -16,12 +16,15 @@ npm start
 
 (i'm posting a postman collection to you import)
 
+GET /ping
+health
+
 POST /login
 expects in body: {
     "username": "magalu@sucesso.com",
     "password": "vamosla"
 }
-returns a token that expires in 2h
+**returns a token that expires in 2h**
 
 POST /client    
 expects in body: clientEmail, clientName    
