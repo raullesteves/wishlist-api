@@ -14,7 +14,8 @@ npm start
 
 ### Using
 
-(i'm posting a postman collection to you import)
+(i'm posting a postman collection to you import)  
+[click here](./magalu.postman_collection.json)  
 
 GET /ping
 health
